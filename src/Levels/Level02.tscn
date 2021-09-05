@@ -61,7 +61,7 @@ next_scene = ExtResource( 5 )
 position = Vector2( 222.67, 907.26 )
 
 [node name="AnimatedSprite" parent="Player" index="0"]
-frame = 2
+frame = 1
 
 [node name="Camera2D" parent="Player" index="2"]
 limit_left = 180

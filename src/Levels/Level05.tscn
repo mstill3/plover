@@ -61,6 +61,9 @@ next_scene = ExtResource( 4 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 55.0258, -32.2006 )
 
+[node name="AnimatedSprite" parent="Player" index="0"]
+frame = 3
+
 [node name="CollisionShape2D" parent="Player" index="1"]
 position = Vector2( -0.106344, 3.63372 )
 
