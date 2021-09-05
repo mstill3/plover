@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://src/UserInterface/Title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UserInterface/ChangeSceneButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=5]
+[ext_resource path="res://assets/GloriaHallelujah-Regular.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 6 )
+
+[node name="WinScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+theme = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" parent="." instance=ExtResource( 2 )]
+margin_left = -445.5
+margin_top = 129.286
+margin_right = 445.5
+margin_bottom = 431.286
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Congratulations!
+You Win!"
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -191.5
+margin_top = -101.5
+margin_right = 191.5
+margin_bottom = -0.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeSceneButton" parent="Menu" instance=ExtResource( 4 )]
+margin_right = 383.0
+margin_bottom = 101.0
+custom_fonts/font = SubResource( 1 )
+text = "menu"
+next_scene_path = "res://src/Screens/MainScreen.tscn"

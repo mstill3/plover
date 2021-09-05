@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/cloud.png" type="Texture" id=1]
+[ext_resource path="res://src/Screens/BackgroundLayer.gd" type="Script" id=2]
+
+[node name="SkyBackgroundLayer" type="CanvasLayer"]
+layer = -1
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.351, 0.61555, 0.78, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.000520833
+anchor_top = 0.369444
+anchor_right = 1.00104
+anchor_bottom = 1.00093
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
