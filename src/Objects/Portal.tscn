@@ -121,7 +121,7 @@ frames = SubResource( 3 )
 animation = "press"
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
-layer = 5
+layer = 11
 
 [node name="ColorRect" type="ColorRect" parent="TransitionLayer"]
 anchor_right = 1.0

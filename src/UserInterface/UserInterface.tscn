@@ -47,19 +47,19 @@ __meta__ = {
 
 [node name="RetryButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 3 )]
 margin_right = 485.0
-margin_bottom = 96.0
+margin_bottom = 97.0
 
 [node name="ChangeSceneButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 4 )]
-margin_top = 104.0
+margin_top = 105.0
 margin_right = 485.0
-margin_bottom = 201.0
+margin_bottom = 202.0
 text = "Main Menu"
 next_scene_path = "res://src/Screens/MainScreen.tscn"
 
 [node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
-margin_top = 209.0
+margin_top = 210.0
 margin_right = 485.0
-margin_bottom = 306.0
+margin_bottom = 307.0
 
 [node name="Coins" type="Control" parent="."]
 margin_right = 40.0
