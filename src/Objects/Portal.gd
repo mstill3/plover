@@ -1,6 +1,6 @@
 tool
 extends StaticBody2D
-class_name Portal, "res://assets/teleport_pad.png"
+class_name Portal, "res://assets/images/teleport_pad.png"
 
 
 export var next_scene: PackedScene

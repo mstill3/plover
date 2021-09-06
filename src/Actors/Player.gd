@@ -1,5 +1,5 @@
 extends Actor
-class_name Player, "res://assets/icon.png"
+class_name Player, "res://assets/images/player_face.png"
 
 onready var anim_sprite := $AnimatedSprite
 

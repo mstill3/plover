@@ -72,8 +72,8 @@ _global_script_class_icons={
 "Croc": "",
 "Crocman": "",
 "Enemy": "res://assets/enemy.png",
-"Player": "res://assets/icon.png",
-"Portal": "res://assets/teleport_pad.png",
+"Player": "res://assets/images/player_face.png",
+"Portal": "res://assets/images/teleport_pad.png",
 "Raven": "",
 "Turtle": ""
 }
@@ -82,12 +82,13 @@ _global_script_class_icons={
 
 config/name="plover"
 run/main_scene="res://src/Screens/MainScreen.tscn"
-config/icon="res://assets/prettyicon.png"
+config/icon="res://icon.png"
 
 [autoload]
 
 PlayerData="*res://src/Autoload/PlayerData.tscn"
 Events="*res://src/Autoload/SignalEvents.gd"
+BoomBox="*res://src/Autoload/BoomBox.tscn"
 
 [display]
 

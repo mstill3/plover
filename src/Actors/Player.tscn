@@ -19,8 +19,6 @@
 [ext_resource path="res://assets/images/death2.png" type="Texture" id=17]
 [ext_resource path="res://assets/images/death5.png" type="Texture" id=18]
 
-
-
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
 atlas = ExtResource( 5 )
@@ -174,7 +172,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 23 )
 animation = "idle"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
