@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/Objects/Portal.gd" type="Script" id=1]
-[ext_resource path="res://assets/teleport_pad_anim.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/teleport_pad_anim.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -114,6 +114,7 @@ extents = Vector2( 5.38596, 2.04436 )
 collision_layer = 8
 collision_mask = 3
 script = ExtResource( 1 )
+next_scene = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )

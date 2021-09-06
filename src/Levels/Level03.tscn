@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://assets/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/images/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Levels/items_tileset.tres" type="TileSet" id=3]
 [ext_resource path="res://src/Levels/Level06.tscn" type="PackedScene" id=4]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/Screens/SkyBackgroundLayer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Screens/HUD.tscn" type="PackedScene" id=8]
+
 
 [node name="Level03" type="Node2D"]
 position = Vector2( 1, 0 )

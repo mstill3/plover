@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/cloud.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/cloud.png" type="Texture" id=1]
 [ext_resource path="res://src/Screens/BackgroundLayer.gd" type="Script" id=2]
 
 [node name="SkyBackgroundLayer" type="CanvasLayer"]

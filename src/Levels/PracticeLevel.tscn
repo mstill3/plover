@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/images/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Screens/SkyBackgroundLayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/Screens/WinScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Actors/Mush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Actors/Crocman.tscn" type="PackedScene" id=10]
+
 
 [node name="Level01" type="Node2D"]
 position = Vector2( 1, 0 )

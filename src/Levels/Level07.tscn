@@ -8,8 +8,10 @@
 [ext_resource path="res://src/Levels/items_tileset.tres" type="TileSet" id=6]
 [ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/GloriaHallelujah-Regular.ttf" type="DynamicFontData" id=9]
-[ext_resource path="res://assets/tileset.tres" type="TileSet" id=10]
+[ext_resource path="res://assets/fonts/GloriaHallelujah-Regular.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://assets/images/tileset.tres" type="TileSet" id=10]
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 10

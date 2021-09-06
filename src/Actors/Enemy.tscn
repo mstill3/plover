@@ -1,7 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=1]
-[ext_resource path="res://assets/enemy.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/enemy.png" type="Texture" id=2]
+
 
 [sub_resource type="OccluderPolygon2D" id=4]
 polygon = PoolVector2Array( 0, -47, 10, -46, 26, -39, 39, -26, 49, -11, 53, 4, 54, 7, 54, 22, 50, 32, 46, 38, 35, 44, 15, 47, -19, 47, -33, 44, -46, 37, -50, 32, -54, 23, -54, 6, -49, -9, -44, -19, -38, -27, -32, -34, -19, -42, -9, -46 )
