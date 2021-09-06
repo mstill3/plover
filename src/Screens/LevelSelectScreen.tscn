@@ -31,117 +31,100 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Menu" type="VBoxContainer" parent="."]
+[node name="LevelSelectButton4" parent="." instance=ExtResource( 4 )]
+margin_left = 772.879
+margin_top = 327.416
+margin_right = 1155.88
+margin_bottom = 400.416
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+next_scene_path = "res://src/Screens/MainScreen.tscn"
+
+[node name="GridContainer" type="GridContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -613.824
-margin_top = -101.5
-margin_right = -230.824
-margin_bottom = 133.5
+margin_left = -207.0
+margin_top = -117.5
+margin_right = 207.0
+margin_bottom = 117.5
+columns = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LevelSelectButton" parent="Menu" instance=ExtResource( 4 )]
-margin_right = 383.0
+[node name="LevelSelectButton" parent="GridContainer" instance=ExtResource( 4 )]
+margin_right = 132.0
 margin_bottom = 73.0
 custom_fonts/font = SubResource( 2 )
-disabled = true
 text = "1"
 next_scene_path = "res://src/Levels/Level01.tscn"
 
-[node name="LevelSelectButton2" parent="Menu" instance=ExtResource( 4 )]
-margin_top = 81.0
-margin_right = 383.0
-margin_bottom = 154.0
-custom_fonts/font = SubResource( 2 )
-disabled = true
-text = "4"
-next_scene_path = "res://src/Levels/Level01.tscn"
-
-[node name="LevelSelectButton3" parent="Menu" instance=ExtResource( 4 )]
-margin_top = 162.0
-margin_right = 383.0
-margin_bottom = 235.0
-custom_fonts/font = SubResource( 2 )
-disabled = true
-text = "7"
-next_scene_path = "res://src/Levels/Level01.tscn"
-
-[node name="Menu2" type="VBoxContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -202.762
-margin_top = -101.5
-margin_right = 180.238
-margin_bottom = 133.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LevelSelectButton" parent="Menu2" instance=ExtResource( 4 )]
-margin_right = 383.0
+[node name="LevelSelectButton2" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 140.0
+margin_right = 272.0
 margin_bottom = 73.0
 custom_fonts/font = SubResource( 2 )
-disabled = true
 text = "2"
-next_scene_path = "res://src/Levels/Level01.tscn"
+next_scene_path = "res://src/Levels/Level02.tscn"
 
-[node name="LevelSelectButton2" parent="Menu2" instance=ExtResource( 4 )]
+[node name="LevelSelectButton3" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 280.0
+margin_right = 412.0
+margin_bottom = 73.0
+custom_fonts/font = SubResource( 2 )
+text = "3"
+next_scene_path = "res://src/Levels/Level03.tscn"
+
+[node name="LevelSelectButton4" parent="GridContainer" instance=ExtResource( 4 )]
 margin_top = 81.0
-margin_right = 383.0
+margin_right = 132.0
 margin_bottom = 154.0
 custom_fonts/font = SubResource( 2 )
-disabled = true
-text = "5"
-next_scene_path = "res://src/Levels/Level01.tscn"
+text = "4"
+next_scene_path = "res://src/Levels/Level06.tscn"
 
-[node name="LevelSelectButton3" parent="Menu2" instance=ExtResource( 4 )]
+[node name="LevelSelectButton5" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 140.0
+margin_top = 81.0
+margin_right = 272.0
+margin_bottom = 154.0
+custom_fonts/font = SubResource( 2 )
+text = "5"
+next_scene_path = "res://src/Levels/Level04.tscn"
+
+[node name="LevelSelectButton6" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 280.0
+margin_top = 81.0
+margin_right = 412.0
+margin_bottom = 154.0
+custom_fonts/font = SubResource( 2 )
+text = "6"
+next_scene_path = "res://src/Levels/Level05.tscn"
+
+[node name="LevelSelectButton7" parent="GridContainer" instance=ExtResource( 4 )]
 margin_top = 162.0
-margin_right = 383.0
+margin_right = 132.0
+margin_bottom = 235.0
+custom_fonts/font = SubResource( 2 )
+text = "7"
+next_scene_path = "res://src/Levels/PracticeLevel.tscn"
+
+[node name="LevelSelectButton8" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 140.0
+margin_top = 162.0
+margin_right = 272.0
 margin_bottom = 235.0
 custom_fonts/font = SubResource( 2 )
 disabled = true
 text = "8"
 next_scene_path = "res://src/Levels/Level01.tscn"
 
-[node name="Menu3" type="VBoxContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 211.678
-margin_top = -101.5
-margin_right = 594.678
-margin_bottom = 133.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LevelSelectButton" parent="Menu3" instance=ExtResource( 4 )]
-margin_right = 383.0
-margin_bottom = 73.0
-custom_fonts/font = SubResource( 2 )
-disabled = true
-text = "3"
-next_scene_path = "res://src/Levels/Level01.tscn"
-
-[node name="LevelSelectButton2" parent="Menu3" instance=ExtResource( 4 )]
-margin_top = 81.0
-margin_right = 383.0
-margin_bottom = 154.0
-custom_fonts/font = SubResource( 2 )
-disabled = true
-text = "6"
-next_scene_path = "res://src/Levels/Level01.tscn"
-
-[node name="LevelSelectButton3" parent="Menu3" instance=ExtResource( 4 )]
+[node name="LevelSelectButton9" parent="GridContainer" instance=ExtResource( 4 )]
+margin_left = 280.0
 margin_top = 162.0
-margin_right = 383.0
+margin_right = 412.0
 margin_bottom = 235.0
 custom_fonts/font = SubResource( 2 )
 disabled = true

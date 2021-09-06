@@ -3,7 +3,7 @@
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=3]
 
 [node name="HUD" type="CanvasLayer"]
-layer = 100
+layer = -1
 
 [node name="UserInterface" parent="." instance=ExtResource( 3 )]
 anchor_top = 0.00242671

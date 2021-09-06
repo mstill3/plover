@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -7,15 +7,7 @@
 [ext_resource path="res://src/Levels/items_tileset.tres" type="TileSet" id=5]
 [ext_resource path="res://src/Levels/Level02.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Screens/HUD.tscn" type="PackedScene" id=7]
-
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://assets/GloriaHallelujah-Regular.ttf"
-
-[sub_resource type="DynamicFont" id=2]
-size = 10
-use_mipmaps = true
-use_filter = true
-font_data = SubResource( 1 )
+[ext_resource path="res://src/Levels/controltext.tres" type="DynamicFont" id=8]
 
 [node name="Level01" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -50,7 +42,8 @@ margin_left = 277.397
 margin_top = 827.515
 margin_right = 457.397
 margin_bottom = 852.515
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.968627, 0.960784, 0.960784, 1 )
 text = "A: Left     D: Right"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -64,7 +57,7 @@ next_scene = ExtResource( 6 )
 position = Vector2( 222.67, 907.26 )
 
 [node name="AnimatedSprite" parent="Player" index="0"]
-frame = 3
+frame = 1
 
 [node name="Camera2D" parent="Player" index="2"]
 limit_left = 180
