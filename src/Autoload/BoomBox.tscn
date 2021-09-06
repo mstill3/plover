@@ -3,5 +3,6 @@
 [ext_resource path="res://assets/audio/music/2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.wav" type="AudioStream" id=1]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+pause_mode = 2
 stream = ExtResource( 1 )
 autoplay = true
