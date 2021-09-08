@@ -5,12 +5,10 @@
 [ext_resource path="res://src/Levels/items_tileset.tres" type="TileSet" id=3]
 [ext_resource path="res://src/Levels/Level05.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Screens/SkyBackgroundLayer.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/Objects/Vacuum.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Screens/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/fonts/GloriaHallelujah-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://src/Actors/Boulder.tscn" type="PackedScene" id=12]
-
-
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
@@ -55,15 +53,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Portal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 252.176, -21.252 )
-next_scene = ExtResource( 4 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 16.2846, -45.3957 )
-
-[node name="AnimatedSprite" parent="Player" index="0"]
-frame = 0
+position = Vector2( 13.7386, -23.5427 )
 
 [node name="Camera2D" parent="Player" index="2"]
 limit_left = -15
@@ -75,5 +66,16 @@ limit_bottom = -1
 
 [node name="Boulder" parent="." instance=ExtResource( 12 )]
 position = Vector2( 227.785, -60.9105 )
+
+[node name="Vacuums" type="Node2D" parent="."]
+
+[node name="StartVacuum" parent="Vacuums" instance=ExtResource( 7 )]
+position = Vector2( 4.18904, -22.0394 )
+rotation = 1.5708
+
+[node name="EndVacuum" parent="Vacuums" instance=ExtResource( 7 )]
+position = Vector2( 267.832, -22.0394 )
+rotation = -1.5708
+next_scene = ExtResource( 4 )
 
 [editable path="Player"]

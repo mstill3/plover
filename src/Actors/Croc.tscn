@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/Actors/Croc.gd" type="Script" id=1]
-[ext_resource path="res://assets/croc.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/croc.png" type="Texture" id=2]
 [ext_resource path="res://assets/images/croc_walk.png" type="Texture" id=3]
 [ext_resource path="res://assets/images/croc_idle.png" type="Texture" id=4]
 

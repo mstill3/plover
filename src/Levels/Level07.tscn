@@ -1,17 +1,15 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://src/Levels/PracticeLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Objects/LockedDoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Screens/SkyBackgroundLayer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Screens/HUD.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Actors/Crocman.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Levels/items_tileset.tres" type="TileSet" id=6]
 [ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/Objects/Vacuum.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/fonts/GloriaHallelujah-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://assets/images/tileset.tres" type="TileSet" id=10]
-
-
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
@@ -56,15 +54,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Portal" parent="." instance=ExtResource( 8 )]
-position = Vector2( 342.239, -21.0213 )
-next_scene = ExtResource( 1 )
-
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 82.867, -41.481 )
-
-[node name="AnimatedSprite" parent="Player" index="0"]
-frame = 0
 
 [node name="Camera2D" parent="Player" index="2"]
 limit_left = -15
@@ -79,5 +70,12 @@ position = Vector2( 232.817, -24.2397 )
 
 [node name="Crocman" parent="." instance=ExtResource( 5 )]
 position = Vector2( 169.019, -33.9615 )
+
+[node name="Door" parent="." instance=ExtResource( 1 )]
+position = Vector2( 337.583, -21.2973 )
+
+[node name="EndVacuum" parent="." instance=ExtResource( 8 )]
+position = Vector2( 348.292, -21.4904 )
+rotation = -1.5708
 
 [editable path="Player"]

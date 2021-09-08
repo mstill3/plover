@@ -49,33 +49,39 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Actors/Player.gd"
 }, {
-"base": "StaticBody2D",
-"class": "Portal",
-"language": "GDScript",
-"path": "res://src/Objects/Portal.gd"
-}, {
 "base": "Actor",
 "class": "Raven",
 "language": "GDScript",
 "path": "res://src/Actors/Raven.gd"
 }, {
+"base": "StaticBody2D",
+"class": "Switch",
+"language": "GDScript",
+"path": "res://src/Objects/Button.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Turtle",
 "language": "GDScript",
 "path": "res://src/Actors/Turtle.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Vacuum",
+"language": "GDScript",
+"path": "res://src/Objects/Vacuum.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
 "Boulder": "",
-"Bumper": "res://assets/bumper.png",
-"Coin": "res://assets/coin_face.png",
+"Bumper": "res://assets/images/bumper.png",
+"Coin": "res://assets/images/coin_face.png",
 "Croc": "",
 "Crocman": "",
-"Enemy": "res://assets/enemy.png",
+"Enemy": "res://assets/images/enemy.png",
 "Player": "res://assets/images/player_face.png",
-"Portal": "res://assets/images/teleport_pad.png",
 "Raven": "",
-"Turtle": ""
+"Switch": "res://assets/images/button.png",
+"Turtle": "",
+"Vacuum": ""
 }
 
 [application]

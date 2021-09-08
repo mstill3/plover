@@ -1,5 +1,5 @@
 extends Area2D
-class_name Coin, "res://assets/coin_face.png"
+class_name Coin, "res://assets/images/coin_face.png"
 
 
 onready var anim_player: AnimationPlayer = get_node("AnimationPlayer")

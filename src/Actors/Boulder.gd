@@ -38,5 +38,7 @@ func _on_Area2D_body_entered(body: Node) -> void:
 	if abs(_velocity.x) > 5 or abs(_velocity.y) > 0:
 		if body is Player:
 			Events.emit_signal("hurt_player", damage)
+		elif body is Vacuum:
+			pass
 		else:
 			body.queue_free()

@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/images/yellow_opening_locked_door.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/yellow_open_door.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/yellow_locked_door.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "unlock",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 1.25396
+height = 4.89958
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 1.25396
+height = 4.89958
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 2.22797
+height = 10.5648
+
+[node name="Door" type="KinematicBody2D"]
+scale = Vector2( 0.986592, 1.18202 )
+collision_layer = 9
+collision_mask = 9
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "unlock"
+
+[node name="TopCollision" type="CollisionShape2D" parent="."]
+position = Vector2( -0.12873, -6.33867 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="BottomCollision" type="CollisionShape2D" parent="."]
+position = Vector2( -0.12873, 6.03154 )
+rotation = 1.5708
+shape = SubResource( 3 )
+
+[node name="MiddleCollision" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0302038, -0.153562 )
+shape = SubResource( 4 )

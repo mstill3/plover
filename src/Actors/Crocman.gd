@@ -34,6 +34,6 @@ func _physics_process(delta: float) -> void:
 
 func _on_PlayerSight_body_entered(player: Player) -> void:
 #	print("see")
-	var left = player.position.x < position.x
-	
-	print(left)
+	if player != null:
+		var left = player.position.x < position.x
+		print(left)

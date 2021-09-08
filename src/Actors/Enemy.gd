@@ -1,5 +1,5 @@
 extends Actor
-class_name Enemy, "res://assets/enemy.png"
+class_name Enemy, "res://assets/images/enemy.png"
 
 export var score := 100
 
